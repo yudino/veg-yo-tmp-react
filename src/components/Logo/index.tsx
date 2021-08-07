@@ -1,7 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import VegYologo from "../.././assets/images/vegYo-Bakery_logo.svg";
-import CupcakeLogo from '../../assets/images/cupcake.svg'
 import CupcakeTextLogo from '../../assets/images/cupcake_text_logo.svg'
 
 const LogoWrapper = styled.div`
