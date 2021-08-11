@@ -32,17 +32,17 @@ const RightSection = styled.div`
 `;
 
 export function Navbar(props: any) {
-    const isMobile = useMediaQuery({ maxWidth: DeviceSize.mobile });
+    const isTablet = useMediaQuery({ maxWidth: DeviceSize.tablet });
     
     return (
       <NavBarContainer>
         <LeftSection>
           <Logo />
         </LeftSection>
-        <MiddleSection>{!isMobile && <NavLinks />}</MiddleSection>
+        <MiddleSection>{!isTablet && <NavLinks />}</MiddleSection>
         <RightSection>
-          {!isMobile && <Accessibility />}
-          {isMobile && <MobileNavLinks />}
+          {!isTablet && <Accessibility />}
+          {isTablet && <MobileNavLinks />}
         </RightSection>
       </NavBarContainer>
     );
