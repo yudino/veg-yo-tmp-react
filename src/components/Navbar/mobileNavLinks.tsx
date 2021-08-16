@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Accessibility } from "./accessibility";
 import { MenuToggle } from "./menuToggle";
+import { Marginer } from "../../styled/lib/Title";
 
 const NavLinksContainer = styled.div`
   height: 100%;
@@ -39,9 +40,6 @@ const Link = styled.a`
   font-size: inherit;
 `;
 
-const Marginer = styled.div`
-  height: 1em;
-`;
 
 export function MobileNavLinks(props: any) {
   const [isOpen, setOpen] = React.useState(false);
@@ -66,7 +64,7 @@ export function MobileNavLinks(props: any) {
           <LinkItem>
             <Link href="#">Contact</Link>
           </LinkItem>
-          <Marginer />
+          <Marginer height={ "1em"}/>
           <Accessibility />
         </LinksWrapper>
       )}
