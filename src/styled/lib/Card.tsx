@@ -12,7 +12,7 @@ export const CardContainer = styled.div<CardProps>`
   flex-direction: ${(props) => (props.col ? "column" : "row")};
   width: ${(props) => props.width};
   margin: auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
 
   @media (max-width: ${DeviceSize.tablet}px) {
     flex-direction: column;
